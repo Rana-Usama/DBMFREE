@@ -4,11 +4,11 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 import { Entypo } from '@expo/vector-icons';
 
 //components
+import MyAppButton from './../components/common/MyAppButton';
 import Screen from './../components/Screen';
 
 //config
 import Colors from '../config/Colors';
-import MyAppButton from './../components/common/MyAppButton';
 
 function HomeScreen(props) {
     return (
@@ -37,9 +37,12 @@ function HomeScreen(props) {
                             Top 10 Week winners
                         </Text>
 
-                        <Text style={{ marginTop: RFPercentage(3), color: Colors.white, fontSize: RFPercentage(2.2) }} >
-                            Stephen=#10000 | Eddy=#10,00.0
-                        </Text>
+                        <View style={{ marginTop: RFPercentage(3), justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row', width: '100%', height: RFPercentage(6.5), borderColor: Colors.secondary, borderWidth: RFPercentage(0.1), borderRadius: RFPercentage(1) }} >
+
+                            <Text style={{ marginLeft: RFPercentage(1), color: Colors.white, fontSize: RFPercentage(2.2) }} >
+                                Stephen=#10000 | Eddy=#10,00.0
+                            </Text>
+                        </View>
                     </View>
 
                     {/* Button */}
@@ -70,7 +73,7 @@ function HomeScreen(props) {
                     <Image style={{ borderRadius: RFPercentage(1), marginTop: RFPercentage(6), width: RFPercentage(37), height: RFPercentage(8) }} source={require('../../assets/logo.png')} />
 
                     <View style={{ marginTop: RFPercentage(5), width: '90%', justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row' }} >
-                        <Text style={{ color: "#a22a4c", fontSize: RFPercentage(2), textDecorationLine: 'underline' }} >
+                        <Text style={{ color: "#a22a4c", fontSize: RFPercentage(2.2), textDecorationLine: 'underline' }} >
                             Test
                         </Text>
 
